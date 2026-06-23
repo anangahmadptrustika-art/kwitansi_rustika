@@ -98,6 +98,16 @@
     });
     const months = Object.keys(byMonth).sort().slice(-12);
 
+    // delta vs bulan lalu (untuk kartu "Bulan Ini")
+    const lm = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+    const lmKey = `${lm.getFullYear()}-${String(lm.getMonth() + 1).padStart(2, "0")}`;
+    const lastTotal = byMonth[lmKey] || 0;
+    const deltaPct = lastTotal ? ((thisMonthTotal - lastTotal) / lastTotal) * 100 : null;
+    const deltaHTML = deltaPct === null
+      ? ""
+      : `<span class="delta ${deltaPct > 0.5 ? "up" : deltaPct < -0.5 ? "down" : "flat"}">${
+          deltaPct > 0.5 ? "▲" : deltaPct < -0.5 ? "▼" : "■"} ${Math.abs(deltaPct).toFixed(1)}% vs bln lalu</span>`;
+
     // ringkasan per tahun
     const byYear = {};
     list.forEach((r) => {
@@ -128,7 +138,7 @@
         <span class="top-main">
           <div class="top-desc">${esc(desc)}</div>
           <div class="top-sub">${esc(U.tanggalID(r.requestDate))}</div>
-          <div class="top-bar-track"><div class="top-bar-fill" style="width:${Math.max(4, Math.round((amt / topMax) * 100))}%"></div></div>
+          <div class="top-bar-track"><div class="top-bar-fill" data-w="${Math.max(4, Math.round((amt / topMax) * 100))}%" style="width:0"></div></div>
         </span>
         <span class="top-amount">${esc(U.rupiah(amt))}</span>
       </a>`;
@@ -148,43 +158,43 @@
       </div>
 
       <div class="stat-grid">
-        <div class="stat-card">
+        <div class="stat-card spotlight tilt" data-reveal style="transition-delay:0ms">
           <div class="stat-icon">🧾</div>
-          <div><div class="stat-num">${count}</div><div class="stat-lbl">Total Kwitansi</div></div>
+          <div><div class="stat-num" data-count="${count}" data-format="int">${count}</div><div class="stat-lbl">Total Kwitansi</div></div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card spotlight tilt" data-reveal style="transition-delay:80ms">
           <div class="stat-icon">💰</div>
-          <div><div class="stat-num">${esc(U.rupiah(total))}</div><div class="stat-lbl">Total Nominal</div></div>
+          <div><div class="stat-num" data-count="${total}" data-format="rp">${esc(U.rupiah(total))}</div><div class="stat-lbl">Total Nominal</div></div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card spotlight tilt" data-reveal style="transition-delay:160ms">
           <div class="stat-icon">📅</div>
-          <div><div class="stat-num">${esc(U.rupiah(thisMonthTotal))}</div><div class="stat-lbl">Bulan Ini (${thisMonth.length} kwitansi)</div></div>
+          <div><div class="stat-num" data-count="${thisMonthTotal}" data-format="rp">${esc(U.rupiah(thisMonthTotal))}</div><div class="stat-lbl">Bulan Ini (${thisMonth.length} kwitansi)</div>${deltaHTML}</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card spotlight tilt" data-reveal style="transition-delay:240ms">
           <div class="stat-icon">📊</div>
-          <div><div class="stat-num">${esc(U.rupiah(count ? total / count : 0))}</div><div class="stat-lbl">Rata-rata / Kwitansi</div></div>
+          <div><div class="stat-num" data-count="${count ? Math.round(total / count) : 0}" data-format="rp">${esc(U.rupiah(count ? total / count : 0))}</div><div class="stat-lbl">Rata-rata / Kwitansi</div></div>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card spotlight" data-reveal>
         <div class="card-head"><h2>Tren Pengeluaran per Bulan</h2><span class="muted small">12 bulan terakhir</span></div>
         <div class="chart">${months.length ? trendChartSVG(months, byMonth) : '<p class="muted c">Belum ada data.</p>'}</div>
       </div>
 
-      ${yearPills ? `<div class="card">
+      ${yearPills ? `<div class="card spotlight" data-reveal>
         <div class="card-head"><h2>Ringkasan per Tahun</h2></div>
         <div class="year-grid">${yearPills}</div>
       </div>` : ""}
 
       <div class="dash-2col">
-        <div class="card">
+        <div class="card spotlight" data-reveal>
           <div class="card-head"><h2>Kwitansi Terbaru</h2><a class="link" href="#list">Lihat semua →</a></div>
           <table class="data-table">
             <thead><tr><th>Tanggal</th><th>Keterangan</th><th class="r">Nominal</th><th></th></tr></thead>
             <tbody>${recent}</tbody>
           </table>
         </div>
-        <div class="card">
+        <div class="card spotlight" data-reveal style="transition-delay:90ms">
           <div class="card-head"><h2>Pengeluaran Terbesar</h2></div>
           <div class="top-list">${topItems}</div>
         </div>
@@ -199,6 +209,68 @@
 
     const btnSeed = $("#btn-import-seed");
     if (btnSeed) btnSeed.onclick = importSeed;
+
+    // ---- animasi & interaksi ----
+    setupReveal(view);
+    animateCounters(view);
+    attachInteractive(view);
+    requestAnimationFrame(() => {
+      $$(".top-bar-fill", view).forEach((b) => { if (b.dataset.w) b.style.width = b.dataset.w; });
+    });
+  }
+
+  /* Reveal saat scroll (IntersectionObserver) */
+  function setupReveal(root) {
+    const els = $$("[data-reveal]", root);
+    if (!("IntersectionObserver" in window)) { els.forEach((e) => e.classList.add("is-visible")); return; }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) { en.target.classList.add("is-visible"); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    els.forEach((el) => io.observe(el));
+  }
+
+  /* Angka berhitung naik (count-up) */
+  function animateCounters(root) {
+    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    $$("[data-count]", root).forEach((el) => {
+      const target = Number(el.getAttribute("data-count")) || 0;
+      const fmt = el.getAttribute("data-format");
+      const render = (v) => (el.textContent = fmt === "rp" ? U.rupiah(v) : Math.round(v).toLocaleString("id-ID"));
+      if (reduce || !window.requestAnimationFrame) { render(target); return; }
+      const dur = 1100, t0 = performance.now();
+      const step = (t) => {
+        const p = Math.min(1, (t - t0) / dur);
+        render(target * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(step); else render(target);
+      };
+      requestAnimationFrame(step);
+    });
+  }
+
+  /* Spotlight mengikuti mouse + tilt 3D pada kartu */
+  function attachInteractive(root) {
+    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    $$(".spotlight", root).forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const r = card.getBoundingClientRect();
+        if (!r.width || !r.height) return;
+        card.style.setProperty("--mx", ((e.clientX - r.left) / r.width) * 100 + "%");
+        card.style.setProperty("--my", ((e.clientY - r.top) / r.height) * 100 + "%");
+      });
+    });
+    if (reduce) return;
+    $$(".tilt", root).forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const r = card.getBoundingClientRect();
+        if (!r.width || !r.height) return;
+        const px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+        const rx = (0.5 - py) * 7, ry = (px - 0.5) * 7;
+        card.style.transform = `translateY(-4px) rotateX(${rx.toFixed(2)}deg) rotateY(${ry.toFixed(2)}deg)`;
+      });
+      card.addEventListener("mouseleave", () => { card.style.transform = ""; });
+    });
   }
 
   /* Grafik tren (SVG line + area) untuk Nominal per Bulan */
@@ -236,7 +308,8 @@
       const px = x(i), py = y(byMonth[m]);
       const d = new Date(m + "-01T00:00:00");
       const lbl = U.BULAN[d.getMonth()].slice(0, 3) + " " + String(d.getFullYear()).slice(2);
-      pts += `<g class="pt"><circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="4.5"/>` +
+      const delay = (1.05 + i * 0.06).toFixed(2);
+      pts += `<g class="pt" style="animation-delay:${delay}s"><circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="4.5"/>` +
         `<title>${esc(U.monthLabel(m + "-01"))}: ${esc(U.rupiah(byMonth[m]))}</title>` +
         `<text class="plabel" x="${px.toFixed(1)}" y="${(py - 12).toFixed(1)}">${shortRp(byMonth[m])}</text></g>`;
       xl += `<text class="xtick" x="${px.toFixed(1)}" y="${H - padB + 22}">${esc(lbl)}</text>`;
@@ -250,7 +323,7 @@
       ${grid}
       <line class="axis" x1="${padL}" y1="${padT + ih}" x2="${W - padR}" y2="${padT + ih}"/>
       <path class="area" d="${areaPath}"/>
-      <polyline class="line" points="${linePts}"/>
+      <polyline class="line" points="${linePts}" pathLength="1"/>
       ${pts}
       ${xl}
     </svg>`;
