@@ -30,7 +30,7 @@ di perangkat Anda menggunakan IndexedDB — aman, cepat, dan bisa dipakai offlin
   backup & restore.
 - **🖨️ Cetak / PDF** — tombol cetak menghasilkan PDF rapi ukuran A4
   (gunakan "Save as PDF" pada dialog cetak browser).
-- **📥 Impor Data Historis** — 235 kwitansi dari file Excel (April 2025 – Juni
+- **📥 Impor Data Historis** — 219 kwitansi dari file Excel (April 2025 – Juni
   2026) dapat diimpor sekali klik untuk mengisi dashboard.
 
 ---
@@ -95,7 +95,7 @@ js/db.js            Penyimpanan IndexedDB
 js/receipt.js       Template render dokumen kwitansi
 js/app.js           Router + semua tampilan (dashboard, buat, daftar, setting)
 assets/logo.svg     Logo bawaan (bisa diganti via Pengaturan)
-data/seed.json      235 data kwitansi historis (untuk impor)
+data/seed.json      219 data kwitansi historis (untuk impor)
 ```
 
 ---

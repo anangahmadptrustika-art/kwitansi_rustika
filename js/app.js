@@ -70,6 +70,13 @@
   }
 
   /* ============================================================== DASHBOARD */
+  // Periode (bulan) sebuah kwitansi untuk agregasi dashboard:
+  // pakai field period (bulan sesuai sheet Excel) bila ada, kalau tidak pakai
+  // bulan dari Tanggal kwitansi. Tidak pernah memakai waktu impor (createdAt).
+  function monthKey(r) {
+    return r.period || (r.requestDate || "").slice(0, 7);
+  }
+
   async function renderDashboard(view) {
     App.receipts = await DB.Receipts.all();
     const list = App.receipts;
@@ -79,14 +86,13 @@
     // bulan ini
     const now = new Date();
     const ym = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
-    const thisMonth = list.filter((r) => (r.requestDate || "").slice(0, 7) === ym);
+    const thisMonth = list.filter((r) => monthKey(r) === ym);
     const thisMonthTotal = thisMonth.reduce((s, r) => s + ReceiptTemplate.computeTotal(r), 0);
 
-    // agregasi per bulan (12 terakhir) — berdasarkan Tanggal (requestDate),
-    // bukan waktu impor, agar tidak menumpuk ke bulan berjalan.
+    // agregasi per bulan (12 terakhir) berdasarkan periode kwitansi
     const byMonth = {};
     list.forEach((r) => {
-      const key = (r.requestDate || "").slice(0, 7);
+      const key = monthKey(r);
       if (!key) return;
       byMonth[key] = (byMonth[key] || 0) + ReceiptTemplate.computeTotal(r);
     });
@@ -153,7 +159,7 @@
 
       ${count === 0 ? `<div class="card import-hint">
         <h2>Mulai cepat</h2>
-        <p class="muted">Impor ${"235"} data historis dari Excel Anda (April 2025 – Juni 2026) untuk mengisi dashboard.</p>
+        <p class="muted">Impor 219 data historis dari Excel Anda (April 2025 – Juni 2026) untuk mengisi dashboard.</p>
         <button class="btn btn-secondary" id="btn-import-seed">Impor Data Historis</button>
       </div>` : ""}
     `;
@@ -468,7 +474,7 @@
   /* ================================================================== LIST */
   async function renderList(view) {
     App.receipts = await DB.Receipts.all();
-    const monthsSet = Array.from(new Set(App.receipts.map((r) => (r.requestDate || "").slice(0, 7)).filter(Boolean))).sort().reverse();
+    const monthsSet = Array.from(new Set(App.receipts.map((r) => monthKey(r)).filter(Boolean))).sort().reverse();
     view.innerHTML = `
       <div class="page-head">
         <div><h1>Daftar Kwitansi</h1><p class="muted">${App.receipts.length} kwitansi tersimpan</p></div>
@@ -494,7 +500,7 @@
       const q = $("#search").value.toLowerCase().trim();
       const mf = $("#month-filter").value;
       const rows = App.receipts.filter((r) => {
-        if (mf && (r.requestDate || "").slice(0, 7) !== mf) return false;
+        if (mf && monthKey(r) !== mf) return false;
         if (!q) return true;
         const hay = [r.receiptNo, r.title, r.requestedBy, (r.items || []).map((i) => i.description).join(" ")].join(" ").toLowerCase();
         return hay.includes(q);
@@ -674,6 +680,7 @@
       const recs = seed.map((row, idx) => ({
         id: U.uuid(),
         _seedKey: `${row.date || "x"}|${row.receiptNo || ""}|${row.description}|${row.amount}|${idx}`,
+        period: row.period || (row.date || "").slice(0, 7),
         createdAt: (row.date || U.todayISO()) + "T08:00:00.000Z",
         updatedAt: U.nowISO(),
         title: App.settings.defaultTitle,

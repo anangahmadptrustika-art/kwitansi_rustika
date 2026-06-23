@@ -1,5 +1,6 @@
 [
 {
+"period": "2025-04",
 "month": "April 2025",
 "date": "2025-04-07",
 "receiptNo": "015/RUST/ -KWT/IV/2025",
@@ -8,6 +9,7 @@
 "method": "Transfer_ BNI Salman To : Qadriah Ningsih Rahmadani"
 },
 {
+"period": "2025-04",
 "month": "April 2025",
 "date": "2025-04-07",
 "receiptNo": "016/RUST/ -KWT/IV/2025",
@@ -16,6 +18,7 @@
 "method": "Transfer_ BNI Salman To : Qadriah Ningsih Rahmadani"
 },
 {
+"period": "2025-04",
 "month": "April 2025",
 "date": "2025-04-11",
 "receiptNo": "017/RUST/ -KWT/IV/2025",
@@ -24,6 +27,7 @@
 "method": "Transfer_ BNI Salman To : Qadriah Ningsih Rahmadani"
 },
 {
+"period": "2025-04",
 "month": "April 2025",
 "date": "2025-04-30",
 "receiptNo": "018/RUST/ -KWT/IV/2025",
@@ -32,6 +36,7 @@
 "method": "Transfer_ BNI Salman To : Qadriah Ningsih Rahmadani"
 },
 {
+"period": "2025-05",
 "month": "Mei 2025",
 "date": "2025-05-07",
 "receiptNo": "020/RUST/ -KWT/V/2025",
@@ -40,6 +45,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-05",
 "month": "Mei 2025",
 "date": "2025-05-06",
 "receiptNo": "019/RUST/ -KWT/V/2025",
@@ -48,6 +54,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-05",
 "month": "Mei 2025",
 "date": "2025-05-08",
 "receiptNo": "021/RUST/ -KWT/V/2025",
@@ -56,6 +63,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-05",
 "month": "Mei 2025",
 "date": "2025-05-12",
 "receiptNo": "022RUST/ -KWT/V/2025",
@@ -64,6 +72,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-05",
 "month": "Mei 2025",
 "date": "2025-05-26",
 "receiptNo": "023RUST/ -KWT/V/2025",
@@ -72,6 +81,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-05",
 "month": "Mei 2025",
 "date": "2025-05-30",
 "receiptNo": "024/RUST/ -KWT/V/2025",
@@ -80,6 +90,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-05",
 "month": "Mei 2025",
 "date": "2025-05-31",
 "receiptNo": "058/RUST/ -KWT/V/2025",
@@ -88,14 +99,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
-"month": "Mei 2025",
-"date": "2025-05-01",
-"receiptNo": null,
-"description": "Op Perusahaan",
-"amount": 411690172.0,
-"method": null
-},
-{
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-03",
 "receiptNo": "025/RUST/ -KWT/VI/2025",
@@ -104,6 +108,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-05",
 "receiptNo": "026/RUST/ -KWT/VI/2025",
@@ -112,6 +117,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-08",
 "receiptNo": "027/RUST/ -KWT/VI/2025",
@@ -120,6 +126,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-14",
 "receiptNo": "028/RUST/ -KWT/VI/2025",
@@ -128,6 +135,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-17",
 "receiptNo": "029/RUST/ -KWT/VI/2025",
@@ -136,6 +144,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-18",
 "receiptNo": "030/RUST/ -KWT/VI/2025",
@@ -144,6 +153,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-22",
 "receiptNo": "031/RUST/ -KWT/VI/2025",
@@ -152,6 +162,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-22",
 "receiptNo": "032/RUST/ -KWT/VI/2025",
@@ -160,6 +171,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-23",
 "receiptNo": "033/RUST/ -KWT/VI/2025",
@@ -168,6 +180,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-25",
 "receiptNo": "034/RUST/ -KWT/VI/2025",
@@ -176,6 +189,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-18",
 "receiptNo": "035/RUST/ -KWT/VI/2026",
@@ -184,6 +198,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-30",
 "receiptNo": "036/RUST/ -KWT/VI/2026",
@@ -192,6 +207,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-03",
 "receiptNo": "037/RUST/ -KWT/VI/2026",
@@ -200,6 +216,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-16",
 "receiptNo": "042/RUST/ -KWT/VI/2026",
@@ -208,6 +225,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-06",
 "month": "Juni 2025",
 "date": "2025-06-30",
 "receiptNo": "053/RUST/ -KWT/VI/2026",
@@ -216,14 +234,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
-"month": "Juni 2025",
-"date": "2025-06-01",
-"receiptNo": null,
-"description": "OP Perusahaan",
-"amount": 236150394.0,
-"method": null
-},
-{
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-01",
 "receiptNo": "038/RUST/ -KWT/VII/2025",
@@ -232,6 +243,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-07",
 "receiptNo": "040/RUST/ -KWT/VII/2025",
@@ -240,6 +252,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-08",
 "receiptNo": "041/RUST/ -KWT/VII/2025",
@@ -248,6 +261,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-13",
 "receiptNo": "039/RUST/ -KWT/VII/2025",
@@ -256,6 +270,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-18",
 "receiptNo": "049/RUST/ -KWT/VII/2025",
@@ -264,6 +279,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-20",
 "receiptNo": "047/RUST/ -KWT/VII/2025",
@@ -272,6 +288,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-20",
 "receiptNo": "044/RUST/ -KWT/VII/2025",
@@ -280,6 +297,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-22",
 "receiptNo": "045/RUST/ -KWT/VII/2025",
@@ -288,6 +306,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-21",
 "receiptNo": "046/RUST/ -KWT/VII/2025",
@@ -296,6 +315,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-28",
 "receiptNo": "047/RUST/ -KWT/VII/2025",
@@ -304,6 +324,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-31",
 "receiptNo": "048/RUST/ -KWT/VII/2025",
@@ -312,6 +333,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-07",
 "month": "Juli 2025",
 "date": "2025-07-31",
 "receiptNo": "057/RUST/ -KWT/VII/2025",
@@ -320,14 +342,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
-"month": "Juli 2025",
-"date": "2025-07-01",
-"receiptNo": null,
-"description": "OP Perusahaan",
-"amount": 166858069.0,
-"method": null
-},
-{
+"period": "2025-08",
 "month": "Agustus 2025",
 "date": "2025-08-03",
 "receiptNo": "046/RUST/ -KWT/VIII/2025",
@@ -336,6 +351,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-08",
 "month": "Agustus 2025",
 "date": "2025-08-08",
 "receiptNo": "050/RUST/ -KWT/VIII/2025",
@@ -344,6 +360,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-08",
 "month": "Agustus 2025",
 "date": "2025-08-11",
 "receiptNo": "051/RUST/ -KWT/VIII/2025",
@@ -352,6 +369,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-08",
 "month": "Agustus 2025",
 "date": "2025-08-14",
 "receiptNo": "052/RUST/ -KWT/VIII/2025",
@@ -360,6 +378,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-08",
 "month": "Agustus 2025",
 "date": "2025-08-18",
 "receiptNo": "055/RUST/ -KWT/VIII/2025",
@@ -368,6 +387,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-08",
 "month": "Agustus 2025",
 "date": "2025-08-22",
 "receiptNo": "056/RUST/ -KWT/VIII/2025",
@@ -376,6 +396,16 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-08",
+"month": "Agustus 2025",
+"date": "2025-08-25",
+"receiptNo": "054/RUST/ -KWT/VIII/2025",
+"description": null,
+"amount": 10000000.0,
+"method": "Transfer_ BNI Salman"
+},
+{
+"period": "2025-08",
 "month": "Agustus 2025",
 "date": "2025-08-27",
 "receiptNo": "062/RUST/ -KWT/VII/2025",
@@ -384,6 +414,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-08",
 "month": "Agustus 2025",
 "date": "2025-08-31",
 "receiptNo": "061/RUST/ -KWT/VII/2025",
@@ -392,14 +423,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
-"month": "Agustus 2025",
-"date": "2025-08-01",
-"receiptNo": null,
-"description": "OP Perusahaan",
-"amount": 143844799.0,
-"method": null
-},
-{
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-03",
 "receiptNo": "059/RUST/ -KWT/IX/2025",
@@ -408,6 +432,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-04",
 "receiptNo": "060/RUST/ -KWT/IX/2025",
@@ -416,6 +441,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-14",
 "receiptNo": "063/RUST/ -KWT/IX/2025",
@@ -424,6 +450,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-15",
 "receiptNo": "066/RUST/ -KWT/IX/2025",
@@ -432,6 +459,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-17",
 "receiptNo": "064/RUST/ -KWT/IX/2025",
@@ -440,6 +468,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-17",
 "receiptNo": "065/RUST/ -KWT/IX/2025",
@@ -448,6 +477,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-19",
 "receiptNo": "069/RUST/ -KWT/IX/2025",
@@ -456,6 +486,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-19",
 "receiptNo": "067/RUST/ -KWT/IX/2025",
@@ -464,6 +495,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-19",
 "receiptNo": "068/RUST/ -KWT/IX/2025",
@@ -472,6 +504,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-22",
 "receiptNo": "070/RUST/ -KWT/IX/2025",
@@ -480,6 +513,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-22",
 "receiptNo": "091/RUST/ -KWT/IX/2025",
@@ -488,6 +522,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-25",
 "receiptNo": "071/RUST/ -KWT/IX/2025",
@@ -496,6 +531,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-26",
 "receiptNo": "072/RUST/ -KWT/IX/2025",
@@ -504,6 +540,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-29",
 "receiptNo": "073/RUST/ -KWT/IX/2025",
@@ -512,6 +549,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-09-30",
 "receiptNo": "074/RUST/ -KWT/IX/2025",
@@ -520,6 +558,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-09",
 "month": "September 2025",
 "date": "2025-08-30",
 "receiptNo": "075/RUST/ -KWT/IX/2025",
@@ -528,14 +567,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
-"month": "September 2025",
-"date": "2025-09-01",
-"receiptNo": null,
-"description": "OP Perusahaan",
-"amount": 289192462.0,
-"method": null
-},
-{
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-06",
 "receiptNo": "076/RUST/ -KWT/X/2025",
@@ -544,6 +576,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-06",
 "receiptNo": "077/RUST/ -KWT/X/2025",
@@ -552,6 +585,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-07",
 "receiptNo": "078/RUST/ -KWT/X/2025",
@@ -560,6 +594,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-08",
 "receiptNo": "079/RUST/ -KWT/X/2025",
@@ -568,6 +603,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-10",
 "receiptNo": "080/RUST/ -KWT/X/2025",
@@ -576,6 +612,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-14",
 "receiptNo": "081/RUST/ -KWT/X/2025",
@@ -584,6 +621,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-15",
 "receiptNo": "082/RUST/ -KWT/X/2025",
@@ -592,6 +630,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-20",
 "receiptNo": "086/RUST/ -KWT/X/2025",
@@ -600,6 +639,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-21",
 "receiptNo": "087/RUST/ -KWT/X/2025",
@@ -608,6 +648,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-21",
 "receiptNo": "088/RUST/ -KWT/X/2025",
@@ -616,6 +657,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-14",
 "receiptNo": "089/RUST/ -KWT/X/2025",
@@ -624,6 +666,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-28",
 "receiptNo": "092/RUST/ -KWT/X/2025",
@@ -632,6 +675,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-29",
 "receiptNo": "094/RUST/ -KWT/X/2025",
@@ -640,6 +684,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-30",
 "receiptNo": "095/RUST/ -KWT/X/2025",
@@ -648,6 +693,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-10",
 "month": "Oktober 2025",
 "date": "2025-10-31",
 "receiptNo": "097/RUST/ -KWT/X/2025",
@@ -656,14 +702,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
-"month": "Oktober 2025",
-"date": "2025-10-01",
-"receiptNo": null,
-"description": "OP Perushaan",
-"amount": 232803228.0,
-"method": null
-},
-{
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-01",
 "receiptNo": "096/RUST/ -KWT/XI/2025",
@@ -672,6 +711,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-05",
 "receiptNo": "098/RUST/ -KWT/XI/2025",
@@ -680,6 +720,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-08",
 "receiptNo": "099/RUST/ -KWT/XI/2025",
@@ -688,6 +729,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-10",
 "receiptNo": "0101/RUST/ -KWT/XI/2025",
@@ -696,6 +738,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-10",
 "receiptNo": "0105/RUST/ -KWT/XI/2025",
@@ -704,6 +747,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-11",
 "receiptNo": "0100/RUST/ -KWT/XI/2025",
@@ -712,6 +756,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-13",
 "receiptNo": "0102/RUST/ -KWT/XI/2025",
@@ -720,6 +765,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-15",
 "receiptNo": "0103/RUST/ -KWT/XI/2025",
@@ -728,6 +774,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-17",
 "receiptNo": "0106/RUST/ -KWT/XI/2025",
@@ -736,6 +783,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-17",
 "receiptNo": "0104/RUST/ -KWT/XI/2025",
@@ -744,6 +792,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-20",
 "receiptNo": "0107/RUST/ -KWT/XI/2025",
@@ -752,6 +801,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-26",
 "receiptNo": "0108/RUST/ -KWT/XI/2025",
@@ -760,6 +810,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-26",
 "receiptNo": "0112/RUST/ -KWT/XI/2025",
@@ -768,6 +819,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-28",
 "receiptNo": "0109/RUST/ -KWT/XI/2025",
@@ -776,6 +828,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-28",
 "receiptNo": "0110/RUST/ -KWT/XI/2025",
@@ -784,6 +837,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-11",
 "month": "November 2025",
 "date": "2025-11-30",
 "receiptNo": "0111/RUST/ -KWT/XI/2025",
@@ -792,6 +846,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-03",
 "receiptNo": "0113/RUST/ -KWT/XII/2025",
@@ -800,6 +855,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-04",
 "receiptNo": "0114/RUST/ -KWT/XII/2025",
@@ -808,6 +864,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-04",
 "receiptNo": "0115/RUST/ -KWT/XII/2025",
@@ -816,6 +873,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-06",
 "receiptNo": "0116/RUST/ -KWT/XII/2025",
@@ -824,6 +882,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-07",
 "receiptNo": "0117/RUST/ -KWT/XII/2025",
@@ -832,6 +891,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-07",
 "receiptNo": "0118/RUST/ -KWT/XII/2025",
@@ -840,6 +900,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-09",
 "receiptNo": "0119/RUST/ -KWT/XII/2025",
@@ -848,6 +909,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-12",
 "receiptNo": "0124/RUST/ -KWT/XII/2025",
@@ -856,6 +918,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-15",
 "receiptNo": "0122/RUST/ -KWT/XII/2025",
@@ -864,6 +927,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-15",
 "receiptNo": "0123/RUST/ -KWT/XII/2025",
@@ -872,6 +936,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-20",
 "receiptNo": "0120/RUST/ -KWT/XII/2025",
@@ -880,6 +945,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-20",
 "receiptNo": "0121/RUST/ -KWT/XII/2025",
@@ -888,6 +954,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-24",
 "receiptNo": "0125/RUST/ -KWT/XII/2025",
@@ -896,6 +963,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-24",
 "receiptNo": "0126/RUST/ -KWT/XII/2025",
@@ -904,6 +972,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-24",
 "receiptNo": "0127/RUST/ -KWT/XII/2025",
@@ -912,6 +981,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-24",
 "receiptNo": "0128/RUST/ -KWT/XII/2025",
@@ -920,6 +990,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-25",
 "receiptNo": "0129/RUST/ -KWT/XII/2025",
@@ -928,6 +999,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-25",
 "receiptNo": "0130/RUST/ -KWT/XII/2025",
@@ -936,6 +1008,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-25",
 "receiptNo": "0131/RUST/ -KWT/XII/2025",
@@ -944,6 +1017,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-27",
 "receiptNo": "0132/RUST/ -KWT/XII/2025",
@@ -952,6 +1026,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-29",
 "receiptNo": "0134/RUST/ -KWT/XII/2025",
@@ -960,6 +1035,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-31",
 "receiptNo": "0148/RUST/ -KWT/XII/2025",
@@ -968,6 +1044,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2025-12",
 "month": "Desember 2025",
 "date": "2025-12-31",
 "receiptNo": null,
@@ -976,14 +1053,7 @@
 "method": null
 },
 {
-"month": "Desember 2025",
-"date": "2025-12-01",
-"receiptNo": null,
-"description": "OP Perusahaan",
-"amount": 279099459.0,
-"method": null
-},
-{
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-01",
 "receiptNo": "0135/RUST - KWT/I/2026",
@@ -992,6 +1062,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-03",
 "receiptNo": "0136/RUST - KWT/I/2026",
@@ -1000,6 +1071,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-16",
 "receiptNo": "0137/RUST - KWT/I/2026",
@@ -1008,6 +1080,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-19",
 "receiptNo": "0138/RUST - KWT/I/2026",
@@ -1016,6 +1089,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-19",
 "receiptNo": "0139/RUST - KWT/I/2026",
@@ -1024,6 +1098,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-21",
 "receiptNo": "0140/RUST - KWT/I/2026",
@@ -1032,6 +1107,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-22",
 "receiptNo": "0141/RUST - KWT/I/2036",
@@ -1040,6 +1116,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-22",
 "receiptNo": "0142/RUST - KWT/I/2026",
@@ -1048,6 +1125,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-22",
 "receiptNo": "0143/RUST - KWT/I/2026",
@@ -1056,6 +1134,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-22",
 "receiptNo": "0144/RUST - KWT/I/2026",
@@ -1064,6 +1143,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-23",
 "receiptNo": "0145/RUST - KWT/I/2026",
@@ -1072,6 +1152,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-23",
 "receiptNo": "0146/RUST - KWT/I/2026",
@@ -1080,6 +1161,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-29",
 "receiptNo": "0155/RUST - KWT/I/2026",
@@ -1088,6 +1170,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-24",
 "receiptNo": "0156/RUST - KWT/I/2026",
@@ -1096,6 +1179,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-24",
 "receiptNo": "0157/RUST - KWT/I/2026",
@@ -1104,6 +1188,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-01",
 "month": "Januari 2026",
 "date": "2026-01-31",
 "receiptNo": "0154/RUST - KWT/I/2026",
@@ -1112,30 +1197,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
-"month": "Januari 2026",
-"date": "2026-01-01",
-"receiptNo": null,
-"description": "Total Pengeluaran",
-"amount": 585112872.0,
-"method": null
-},
-{
-"month": "Januari 2026",
-"date": "2026-01-01",
-"receiptNo": null,
-"description": "Operasional Maret [Qadriah Ningsih Rahmadani]",
-"amount": 128100000.0,
-"method": null
-},
-{
-"month": "Januari 2026",
-"date": "2026-01-01",
-"receiptNo": null,
-"description": "Operasional Office Maret",
-"amount": 457012872.0,
-"method": null
-},
-{
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-03",
 "receiptNo": "0149/RUST - KWT/II/2026",
@@ -1144,6 +1206,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-07",
 "receiptNo": "0150/RUST - KWT/II/2026",
@@ -1152,6 +1215,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-07",
 "receiptNo": "0151/RUST - KWT/II/2026",
@@ -1160,6 +1224,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-07",
 "receiptNo": "0152/RUST - KWT/II/2026",
@@ -1168,6 +1233,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-10",
 "receiptNo": "0153/RUST - KWT/II/2026",
@@ -1176,6 +1242,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-10",
 "receiptNo": "0158/RUST - KWT/II/2026",
@@ -1184,6 +1251,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-13",
 "receiptNo": "0159/RUST - KWT/II/2026",
@@ -1192,6 +1260,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-18",
 "receiptNo": "0160/RUST - KWT/II/2026",
@@ -1200,6 +1269,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-18",
 "receiptNo": null,
@@ -1208,6 +1278,7 @@
 "method": "Buatkan Kwitansi"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-19",
 "receiptNo": "0161/RUST - KWT/II/2026",
@@ -1216,6 +1287,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-19",
 "receiptNo": "0162/RUST - KWT/II/2026",
@@ -1224,6 +1296,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-23",
 "receiptNo": "0163/RUST - KWT/II/2026",
@@ -1232,6 +1305,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-24",
 "receiptNo": "0164/RUST - KWT/II/2026",
@@ -1240,6 +1314,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-24",
 "receiptNo": "0165/RUST - KWT/II/2026",
@@ -1248,6 +1323,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-24",
 "receiptNo": "0166/RUST - KWT/II/2026",
@@ -1256,6 +1332,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-25",
 "receiptNo": null,
@@ -1264,6 +1341,7 @@
 "method": "Buatkan Kwitansi"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-28",
 "receiptNo": "0167/RUST - KWT/II/2026",
@@ -1272,6 +1350,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-28",
 "receiptNo": "0168/RUST - KWT/II/2026",
@@ -1280,6 +1359,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-28",
 "receiptNo": "0169/RUST - KWT/II/2026",
@@ -1288,6 +1368,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-02",
 "month": "Februari 2026",
 "date": "2026-02-28",
 "receiptNo": null,
@@ -1296,30 +1377,7 @@
 "method": null
 },
 {
-"month": "Februari 2026",
-"date": "2026-02-01",
-"receiptNo": null,
-"description": "Total Pengeluaran",
-"amount": 510172267.0,
-"method": null
-},
-{
-"month": "Februari 2026",
-"date": "2026-02-01",
-"receiptNo": null,
-"description": "Operasional Maret [Qadriah Ningsih Rahmadani]",
-"amount": 267451870.0,
-"method": null
-},
-{
-"month": "Februari 2026",
-"date": "2026-02-01",
-"receiptNo": null,
-"description": "Operasional Office Maret",
-"amount": 242720397.0,
-"method": null
-},
-{
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-03",
 "receiptNo": "0170/RUST - KWT/III/2026",
@@ -1328,6 +1386,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-03",
 "receiptNo": null,
@@ -1336,6 +1395,7 @@
 "method": "Buatkan Kwitansi"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-05",
 "receiptNo": "0171/RUST - KWT/III/2026",
@@ -1344,6 +1404,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-09",
 "receiptNo": "0172/RUST - KWT/III/2026",
@@ -1352,6 +1413,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-09",
 "receiptNo": null,
@@ -1360,6 +1422,7 @@
 "method": "Buatkan Kwitansi"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-10",
 "receiptNo": "0173/RUST - KWT/III/2026",
@@ -1368,6 +1431,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-11",
 "receiptNo": "0174/RUST - KWT/III/2026",
@@ -1376,6 +1440,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-13",
 "receiptNo": "0175/RUST - KWT/III/2026",
@@ -1384,6 +1449,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-14",
 "receiptNo": "0176/RUST - KWT/III/2026",
@@ -1392,6 +1458,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-14",
 "receiptNo": "0177/RUST - KWT/III/2026",
@@ -1400,6 +1467,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-17",
 "receiptNo": "0178/RUST - KWT/III/2026",
@@ -1408,6 +1476,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-18",
 "receiptNo": "0179/RUST - KWT/III/2026",
@@ -1416,6 +1485,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-18",
 "receiptNo": "0180/RUST - KWT/III/2026",
@@ -1424,6 +1494,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-19",
 "receiptNo": "0181/RUST - KWT/III/2026",
@@ -1432,6 +1503,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-25",
 "receiptNo": "0198/RUST - KWT/III/2026",
@@ -1440,6 +1512,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-25",
 "receiptNo": "0182/RUST - KWT/III/2026",
@@ -1448,6 +1521,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-25",
 "receiptNo": "0183/RUST - KWT/III/2026",
@@ -1456,6 +1530,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-26",
 "receiptNo": "0184/RUST - KWT/III/2026",
@@ -1464,6 +1539,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-26",
 "receiptNo": "0185/RUST - KWT/III/2026",
@@ -1472,6 +1548,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-27",
 "receiptNo": "0186/RUST - KWT/III/2026",
@@ -1480,6 +1557,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-29",
 "receiptNo": "0187/RUST - KWT/III/2026",
@@ -1488,6 +1566,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-31",
 "receiptNo": "0188/RUST - KWT/III/2026",
@@ -1496,6 +1575,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-31",
 "receiptNo": "0189/RUST - KWT/III/2026",
@@ -1504,6 +1584,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-31",
 "receiptNo": "0190/RUST - KWT/III/2026",
@@ -1512,6 +1593,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-03",
 "month": "Maret 2026",
 "date": "2026-03-31",
 "receiptNo": "0191/RUST - KWT/III/2026",
@@ -1520,30 +1602,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
-"month": "Maret 2026",
-"date": "2026-03-01",
-"receiptNo": null,
-"description": "Total Pengeluaran",
-"amount": 611773710.0,
-"method": null
-},
-{
-"month": "Maret 2026",
-"date": "2026-03-01",
-"receiptNo": null,
-"description": "Operasional Maret [Qadriah Ningsih Rahmadani]",
-"amount": 100592133.0,
-"method": null
-},
-{
-"month": "Maret 2026",
-"date": "2026-03-01",
-"receiptNo": null,
-"description": "Operasional Office Maret",
-"amount": 511181577.0,
-"method": null
-},
-{
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-01",
 "receiptNo": "0192/RUST - KWT/IV/2026",
@@ -1552,6 +1611,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-01",
 "receiptNo": "0193/RUST - KWT/IV/2026",
@@ -1560,6 +1620,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-02",
 "receiptNo": "0194/RUST - KWT/IV/2026",
@@ -1568,6 +1629,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-02",
 "receiptNo": "0217/RUST - KWT/IV/2026",
@@ -1576,6 +1638,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-06",
 "receiptNo": "0195/RUST - KWT/IV/2026",
@@ -1584,6 +1647,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-06",
 "receiptNo": "0196/RUST - KWT/IV/2026",
@@ -1592,6 +1656,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-08",
 "receiptNo": "0197/RUST - KWT/IV/2026",
@@ -1600,6 +1665,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-08",
 "receiptNo": "0199/RUST - KWT/IV/2026",
@@ -1608,6 +1674,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-09",
 "receiptNo": "0200/RUST - KWT/IV/2026",
@@ -1616,6 +1683,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-11",
 "receiptNo": "0201/RUST - KWT/IV/2026",
@@ -1624,6 +1692,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-13",
 "receiptNo": "0202/RUST - KWT/IV/2026",
@@ -1632,6 +1701,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-14",
 "receiptNo": "0204/RUST - KWT/IV/2026",
@@ -1640,6 +1710,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-15",
 "receiptNo": "0205/RUST - KWT/IV/2026",
@@ -1648,6 +1719,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-15",
 "receiptNo": "0206/RUST - KWT/IV/2026",
@@ -1656,6 +1728,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-17",
 "receiptNo": "0207/RUST - KWT/IV/2026",
@@ -1664,6 +1737,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-18",
 "receiptNo": "0218/RUST - KWT/IV/2026",
@@ -1672,6 +1746,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-21",
 "receiptNo": "0208/RUST - KWT/IV/2026",
@@ -1680,6 +1755,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-21",
 "receiptNo": "0209/RUST - KWT/IV/2026",
@@ -1688,6 +1764,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-30",
 "receiptNo": "0210/RUST - KWT/IV/2026",
@@ -1696,6 +1773,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-30",
 "receiptNo": "0211/RUST - KWT/IV/2026",
@@ -1704,6 +1782,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-30",
 "receiptNo": "0212/RUST - KWT/IV/2026",
@@ -1712,6 +1791,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-30",
 "receiptNo": "0213/RUST - KWT/IV/2026",
@@ -1720,6 +1800,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-30",
 "receiptNo": "0214/RUST - KWT/IV/2026",
@@ -1728,6 +1809,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-30",
 "receiptNo": "0215/RUST - KWT/IV/2026",
@@ -1736,6 +1818,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-04",
 "month": "April 2026",
 "date": "2026-04-30",
 "receiptNo": "0216/RUST - KWT/IV/2026",
@@ -1744,14 +1827,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
-"month": "April 2026",
-"date": "2026-04-01",
-"receiptNo": null,
-"description": "Operasional Office",
-"amount": 307108008.0,
-"method": null
-},
-{
+"period": "2026-05",
 "month": "Mei 2026",
 "date": "2026-05-08",
 "receiptNo": "0219/RUST - KWT/V/2026",
@@ -1760,6 +1836,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-05",
 "month": "Mei 2026",
 "date": "2026-05-08",
 "receiptNo": "0220/RUST - KWT/V/2026",
@@ -1768,6 +1845,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-05",
 "month": "Mei 2026",
 "date": "2026-05-11",
 "receiptNo": "0221/RUST - KWT/V/2026",
@@ -1776,6 +1854,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-05",
 "month": "Mei 2026",
 "date": "2026-05-15",
 "receiptNo": "0222/RUST - KWT/V/2026",
@@ -1784,6 +1863,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-05",
 "month": "Mei 2026",
 "date": "2026-05-18",
 "receiptNo": "0223/RUST - KWT/V/2026",
@@ -1792,6 +1872,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-05",
 "month": "Mei 2026",
 "date": "2026-05-20",
 "receiptNo": "0224/RUST - KWT/V/2026",
@@ -1800,6 +1881,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-05",
 "month": "Mei 2026",
 "date": "2026-05-23",
 "receiptNo": "0225/RUST - KWT/V/2026",
@@ -1808,6 +1890,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-05",
 "month": "Mei 2026",
 "date": "2026-05-23",
 "receiptNo": "0226/RUST - KWT/V/2026",
@@ -1816,6 +1899,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-05",
 "month": "Mei 2026",
 "date": "2026-05-25",
 "receiptNo": "0227/RUST - KWT/V/2026",
@@ -1824,6 +1908,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-05",
 "month": "Mei 2026",
 "date": "2026-05-30",
 "receiptNo": "0228/RUST - KWT/V/2026",
@@ -1832,6 +1917,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-06",
 "month": "Juni 2026",
 "date": "2026-06-02",
 "receiptNo": null,
@@ -1840,6 +1926,7 @@
 "method": "Transfer_ BNI Salman"
 },
 {
+"period": "2026-06",
 "month": "Juni 2026",
 "date": "2026-06-02",
 "receiptNo": null,
@@ -1848,6 +1935,7 @@
 "method": null
 },
 {
+"period": "2026-06",
 "month": "Juni 2026",
 "date": "2026-06-05",
 "receiptNo": null,
@@ -1856,6 +1944,7 @@
 "method": null
 },
 {
+"period": "2026-06",
 "month": "Juni 2026",
 "date": "2026-06-08",
 "receiptNo": null,
@@ -1864,6 +1953,7 @@
 "method": null
 },
 {
+"period": "2026-06",
 "month": "Juni 2026",
 "date": "2026-06-12",
 "receiptNo": null,
@@ -1872,6 +1962,7 @@
 "method": null
 },
 {
+"period": "2026-06",
 "month": "Juni 2026",
 "date": "2026-05-15",
 "receiptNo": null,
