@@ -1,0 +1,43 @@
+name: Deploy ke GitHub Pages
+
+# Deploy otomatis setiap kali ada push ke branch utama, atau dijalankan manual.
+on:
+  push:
+    branches:
+      - "claude/amazing-goodall-67353y"
+      - main
+      - master
+  workflow_dispatch:
+
+# Izin yang dibutuhkan untuk publish ke GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Hanya satu deploy berjalan dalam satu waktu
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact (seluruh situs statis)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy ke GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
