@@ -97,27 +97,49 @@
       byMonth[key] = (byMonth[key] || 0) + ReceiptTemplate.computeTotal(r);
     });
     const months = Object.keys(byMonth).sort().slice(-12);
-    const maxVal = Math.max(1, ...months.map((m) => byMonth[m]));
 
-    const bars = months.map((m) => {
-      const h = Math.round((byMonth[m] / maxVal) * 100);
-      const d = new Date(m + "-01T00:00:00");
-      const lbl = U.BULAN[d.getMonth()].slice(0, 3) + " " + String(d.getFullYear()).slice(2);
-      return `<div class="bar-col" title="${esc(U.monthLabel(m + "-01"))}: ${esc(U.rupiah(byMonth[m]))}">
-        <div class="bar-val">${shortRp(byMonth[m])}</div>
-        <div class="bar" style="height:${h}%"></div>
-        <div class="bar-label">${esc(lbl)}</div>
-      </div>`;
-    }).join("");
+    // ringkasan per tahun
+    const byYear = {};
+    list.forEach((r) => {
+      const y = (monthKey(r) || "").slice(0, 4);
+      if (!y) return;
+      byYear[y] = byYear[y] || { total: 0, count: 0 };
+      byYear[y].total += ReceiptTemplate.computeTotal(r);
+      byYear[y].count += 1;
+    });
 
-    const recent = list.slice(0, 8).map((r) => `
+    // pengeluaran terbesar (top 6)
+    const topTx = list.slice().sort((a, b) => ReceiptTemplate.computeTotal(b) - ReceiptTemplate.computeTotal(a)).slice(0, 6);
+    const topMax = topTx.length ? ReceiptTemplate.computeTotal(topTx[0]) : 1;
+
+    const recent = list.slice(0, 6).map((r) => `
       <tr>
         <td>${esc(U.tanggalID(r.requestDate))}</td>
-        <td>${esc(r.receiptNo || "-")}</td>
         <td>${esc((r.items && r.items[0] && r.items[0].description) || r.title || "-")}</td>
         <td class="r">${esc(U.rupiah(ReceiptTemplate.computeTotal(r)))}</td>
         <td><a class="link" href="#view/${esc(r.id)}">Lihat</a></td>
-      </tr>`).join("") || `<tr><td colspan="5" class="muted c">Belum ada kwitansi. <a class="link" href="#create">Buat sekarang</a>.</td></tr>`;
+      </tr>`).join("") || `<tr><td colspan="4" class="muted c">Belum ada kwitansi. <a class="link" href="#create">Buat sekarang</a>.</td></tr>`;
+
+    const topItems = topTx.map((r, i) => {
+      const amt = ReceiptTemplate.computeTotal(r);
+      const desc = (r.items && r.items[0] && r.items[0].description) || r.title || "-";
+      return `<a class="top-item" href="#view/${esc(r.id)}">
+        <span class="top-rank">${i + 1}</span>
+        <span class="top-main">
+          <div class="top-desc">${esc(desc)}</div>
+          <div class="top-sub">${esc(U.tanggalID(r.requestDate))}</div>
+          <div class="top-bar-track"><div class="top-bar-fill" style="width:${Math.max(4, Math.round((amt / topMax) * 100))}%"></div></div>
+        </span>
+        <span class="top-amount">${esc(U.rupiah(amt))}</span>
+      </a>`;
+    }).join("") || `<p class="muted c">Belum ada data.</p>`;
+
+    const yearPills = Object.keys(byYear).sort().map((y) => `
+      <div class="year-pill">
+        <div class="yp-year">Tahun ${esc(y)}</div>
+        <div class="yp-total">${esc(U.rupiah(byYear[y].total))}</div>
+        <div class="yp-count">${byYear[y].count} kwitansi</div>
+      </div>`).join("");
 
     view.innerHTML = `
       <div class="page-head">
@@ -145,16 +167,27 @@
       </div>
 
       <div class="card">
-        <div class="card-head"><h2>Nominal per Bulan</h2></div>
-        <div class="chart">${bars || '<p class="muted c">Belum ada data.</p>'}</div>
+        <div class="card-head"><h2>Tren Pengeluaran per Bulan</h2><span class="muted small">12 bulan terakhir</span></div>
+        <div class="chart">${months.length ? trendChartSVG(months, byMonth) : '<p class="muted c">Belum ada data.</p>'}</div>
       </div>
 
-      <div class="card">
-        <div class="card-head"><h2>Kwitansi Terbaru</h2><a class="link" href="#list">Lihat semua →</a></div>
-        <table class="data-table">
-          <thead><tr><th>Tanggal</th><th>No. Kwitansi</th><th>Keterangan</th><th class="r">Nominal</th><th></th></tr></thead>
-          <tbody>${recent}</tbody>
-        </table>
+      ${yearPills ? `<div class="card">
+        <div class="card-head"><h2>Ringkasan per Tahun</h2></div>
+        <div class="year-grid">${yearPills}</div>
+      </div>` : ""}
+
+      <div class="dash-2col">
+        <div class="card">
+          <div class="card-head"><h2>Kwitansi Terbaru</h2><a class="link" href="#list">Lihat semua →</a></div>
+          <table class="data-table">
+            <thead><tr><th>Tanggal</th><th>Keterangan</th><th class="r">Nominal</th><th></th></tr></thead>
+            <tbody>${recent}</tbody>
+          </table>
+        </div>
+        <div class="card">
+          <div class="card-head"><h2>Pengeluaran Terbesar</h2></div>
+          <div class="top-list">${topItems}</div>
+        </div>
       </div>
 
       ${count === 0 ? `<div class="card import-hint">
@@ -166,6 +199,61 @@
 
     const btnSeed = $("#btn-import-seed");
     if (btnSeed) btnSeed.onclick = importSeed;
+  }
+
+  /* Grafik tren (SVG line + area) untuk Nominal per Bulan */
+  function niceMax(v) {
+    if (v <= 0) return 1;
+    const pow = Math.pow(10, Math.floor(Math.log10(v)));
+    const n = v / pow;
+    const step = n <= 1 ? 1 : n <= 2 ? 2 : n <= 2.5 ? 2.5 : n <= 5 ? 5 : 10;
+    return step * pow;
+  }
+
+  function trendChartSVG(months, byMonth) {
+    const W = 920, H = 320, padL = 58, padR = 24, padT = 26, padB = 42;
+    const iw = W - padL - padR, ih = H - padT - padB;
+    const n = months.length;
+    const maxV = niceMax(Math.max(1, ...months.map((m) => byMonth[m])));
+    const x = (i) => padL + (n <= 1 ? iw / 2 : (iw * i) / (n - 1));
+    const y = (v) => padT + ih - (v / maxV) * ih;
+
+    const G = 4;
+    let grid = "";
+    for (let g = 0; g <= G; g++) {
+      const gv = (maxV * g) / G, gy = y(gv);
+      grid += `<line class="grid" x1="${padL}" y1="${gy.toFixed(1)}" x2="${W - padR}" y2="${gy.toFixed(1)}"/>`;
+      grid += `<text class="ytick" x="${padL - 10}" y="${(gy + 4).toFixed(1)}">${shortRp(gv)}</text>`;
+    }
+
+    const linePts = months.map((m, i) => `${x(i).toFixed(1)},${y(byMonth[m]).toFixed(1)}`).join(" ");
+    const areaPath = `M ${x(0).toFixed(1)},${y(0).toFixed(1)} L ${months
+      .map((m, i) => `${x(i).toFixed(1)},${y(byMonth[m]).toFixed(1)}`)
+      .join(" L ")} L ${x(n - 1).toFixed(1)},${y(0).toFixed(1)} Z`;
+
+    let pts = "", xl = "";
+    months.forEach((m, i) => {
+      const px = x(i), py = y(byMonth[m]);
+      const d = new Date(m + "-01T00:00:00");
+      const lbl = U.BULAN[d.getMonth()].slice(0, 3) + " " + String(d.getFullYear()).slice(2);
+      pts += `<g class="pt"><circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="4.5"/>` +
+        `<title>${esc(U.monthLabel(m + "-01"))}: ${esc(U.rupiah(byMonth[m]))}</title>` +
+        `<text class="plabel" x="${px.toFixed(1)}" y="${(py - 12).toFixed(1)}">${shortRp(byMonth[m])}</text></g>`;
+      xl += `<text class="xtick" x="${px.toFixed(1)}" y="${H - padB + 22}">${esc(lbl)}</text>`;
+    });
+
+    return `<svg viewBox="0 0 ${W} ${H}" class="trend" preserveAspectRatio="xMidYMid meet" role="img">
+      <defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#F2B816" stop-opacity="0.32"/>
+        <stop offset="100%" stop-color="#F2B816" stop-opacity="0.02"/>
+      </linearGradient></defs>
+      ${grid}
+      <line class="axis" x1="${padL}" y1="${padT + ih}" x2="${W - padR}" y2="${padT + ih}"/>
+      <path class="area" d="${areaPath}"/>
+      <polyline class="line" points="${linePts}"/>
+      ${pts}
+      ${xl}
+    </svg>`;
   }
 
   function shortRp(n) {
