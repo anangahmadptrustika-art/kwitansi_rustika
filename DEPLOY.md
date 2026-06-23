@@ -11,11 +11,18 @@ di-deploy ke GitHub Pages maupun Vercel. Semua data tersimpan di browser
 Repo ini sudah berisi workflow `.github/workflows/deploy.yml` yang otomatis
 men-deploy setiap kali ada push.
 
+> ⚠️ **WAJIB sekali di awal:** GitHub tidak mengizinkan workflow mengaktifkan
+> Pages sendiri untuk repo baru (token Actions tidak punya izin tersebut). Jadi
+> Pages **harus diaktifkan manual satu kali**. Sebelum langkah ini, workflow
+> akan selalu gagal di tahap *Setup Pages* — itu normal.
+
 **Langkah sekali saja:**
 
 1. Buka repo di GitHub → **Settings** → **Pages**
 2. Bagian **Build and deployment** → **Source** pilih **GitHub Actions**
-3. Selesai. Setiap push akan otomatis ter-deploy.
+3. Buka tab **Actions** → pilih run terakhir workflow *Deploy ke GitHub Pages*
+   → klik **Re-run jobs** (atau cukup push commit baru)
+4. Selesai. Mulai sekarang setiap push otomatis ter-deploy.
 
 Cek progres di tab **Actions**. Setelah selesai, alamat situs muncul di
 **Settings → Pages**, biasanya:
