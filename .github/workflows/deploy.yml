@@ -32,6 +32,9 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Aktifkan GitHub Pages secara otomatis bila belum aktif
+          enablement: true
 
       - name: Upload artifact (seluruh situs statis)
         uses: actions/upload-pages-artifact@v3
