@@ -89,7 +89,7 @@
 },
 {
 "month": "Mei 2025",
-"date": null,
+"date": "2025-05-01",
 "receiptNo": null,
 "description": "Op Perusahaan",
 "amount": 411690172.0,
@@ -217,7 +217,7 @@
 },
 {
 "month": "Juni 2025",
-"date": null,
+"date": "2025-06-01",
 "receiptNo": null,
 "description": "OP Perusahaan",
 "amount": 236150394.0,
@@ -321,7 +321,7 @@
 },
 {
 "month": "Juli 2025",
-"date": null,
+"date": "2025-07-01",
 "receiptNo": null,
 "description": "OP Perusahaan",
 "amount": 166858069.0,
@@ -393,7 +393,7 @@
 },
 {
 "month": "Agustus 2025",
-"date": null,
+"date": "2025-08-01",
 "receiptNo": null,
 "description": "OP Perusahaan",
 "amount": 143844799.0,
@@ -529,7 +529,7 @@
 },
 {
 "month": "September 2025",
-"date": null,
+"date": "2025-09-01",
 "receiptNo": null,
 "description": "OP Perusahaan",
 "amount": 289192462.0,
@@ -657,7 +657,7 @@
 },
 {
 "month": "Oktober 2025",
-"date": null,
+"date": "2025-10-01",
 "receiptNo": null,
 "description": "OP Perushaan",
 "amount": 232803228.0,
@@ -977,7 +977,7 @@
 },
 {
 "month": "Desember 2025",
-"date": null,
+"date": "2025-12-01",
 "receiptNo": null,
 "description": "OP Perusahaan",
 "amount": 279099459.0,
@@ -1113,7 +1113,7 @@
 },
 {
 "month": "Januari 2026",
-"date": null,
+"date": "2026-01-01",
 "receiptNo": null,
 "description": "Total Pengeluaran",
 "amount": 585112872.0,
@@ -1121,7 +1121,7 @@
 },
 {
 "month": "Januari 2026",
-"date": null,
+"date": "2026-01-01",
 "receiptNo": null,
 "description": "Operasional Maret [Qadriah Ningsih Rahmadani]",
 "amount": 128100000.0,
@@ -1129,7 +1129,7 @@
 },
 {
 "month": "Januari 2026",
-"date": null,
+"date": "2026-01-01",
 "receiptNo": null,
 "description": "Operasional Office Maret",
 "amount": 457012872.0,
@@ -1297,7 +1297,7 @@
 },
 {
 "month": "Februari 2026",
-"date": null,
+"date": "2026-02-01",
 "receiptNo": null,
 "description": "Total Pengeluaran",
 "amount": 510172267.0,
@@ -1305,7 +1305,7 @@
 },
 {
 "month": "Februari 2026",
-"date": null,
+"date": "2026-02-01",
 "receiptNo": null,
 "description": "Operasional Maret [Qadriah Ningsih Rahmadani]",
 "amount": 267451870.0,
@@ -1313,7 +1313,7 @@
 },
 {
 "month": "Februari 2026",
-"date": null,
+"date": "2026-02-01",
 "receiptNo": null,
 "description": "Operasional Office Maret",
 "amount": 242720397.0,
@@ -1521,7 +1521,7 @@
 },
 {
 "month": "Maret 2026",
-"date": null,
+"date": "2026-03-01",
 "receiptNo": null,
 "description": "Total Pengeluaran",
 "amount": 611773710.0,
@@ -1529,7 +1529,7 @@
 },
 {
 "month": "Maret 2026",
-"date": null,
+"date": "2026-03-01",
 "receiptNo": null,
 "description": "Operasional Maret [Qadriah Ningsih Rahmadani]",
 "amount": 100592133.0,
@@ -1537,7 +1537,7 @@
 },
 {
 "month": "Maret 2026",
-"date": null,
+"date": "2026-03-01",
 "receiptNo": null,
 "description": "Operasional Office Maret",
 "amount": 511181577.0,
@@ -1745,7 +1745,7 @@
 },
 {
 "month": "April 2026",
-"date": null,
+"date": "2026-04-01",
 "receiptNo": null,
 "description": "Operasional Office",
 "amount": 307108008.0,

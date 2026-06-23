@@ -82,10 +82,11 @@
     const thisMonth = list.filter((r) => (r.requestDate || "").slice(0, 7) === ym);
     const thisMonthTotal = thisMonth.reduce((s, r) => s + ReceiptTemplate.computeTotal(r), 0);
 
-    // agregasi per bulan (12 terakhir)
+    // agregasi per bulan (12 terakhir) — berdasarkan Tanggal (requestDate),
+    // bukan waktu impor, agar tidak menumpuk ke bulan berjalan.
     const byMonth = {};
     list.forEach((r) => {
-      const key = (r.requestDate || r.createdAt || "").slice(0, 7);
+      const key = (r.requestDate || "").slice(0, 7);
       if (!key) return;
       byMonth[key] = (byMonth[key] || 0) + ReceiptTemplate.computeTotal(r);
     });
@@ -664,36 +665,37 @@
     try {
       const res = await fetch("data/seed.json");
       const seed = await res.json();
+      // Hapus data historis lama (yang ber-tanda impor) agar impor ulang
+      // me-refresh dengan tanggal terbaru — kwitansi buatan sendiri tetap aman.
       const existing = await DB.Receipts.all();
-      const known = new Set(existing.map((r) => r._seedKey).filter(Boolean));
-      const recs = [];
-      seed.forEach((row, idx) => {
-        const seedKey = `${row.date || "x"}|${row.receiptNo || ""}|${row.description}|${row.amount}|${idx}`;
-        if (known.has(seedKey)) return;
-        recs.push({
-          id: U.uuid(),
-          _seedKey: seedKey,
-          createdAt: (row.date || U.todayISO()) + "T08:00:00.000Z",
-          updatedAt: U.nowISO(),
-          title: App.settings.defaultTitle,
-          documentCode: "",
-          version: "",
-          effectiveDate: row.date || "",
-          department: App.settings.defaultDepartment,
-          requestDate: row.date || "",
-          requestedBy: App.settings.defaultRequester.name,
-          division: App.settings.defaultDivision,
-          receiptNo: row.receiptNo || "",
-          items: [{ description: row.description, amount: row.amount, virtualAccount: "", remarks: "" }],
-          requester: Object.assign({}, App.settings.defaultRequester),
-          approver: Object.assign({}, App.settings.defaultApprover),
-          notes: row.method ? "Metode: " + row.method : "",
-          transferProofs: [],
-        });
-      });
-      if (!recs.length) { toast("Data historis sudah diimpor sebelumnya", "warn"); return; }
+      const oldSeed = existing.filter((r) => r._seedKey);
+      for (const r of oldSeed) await DB.Receipts.remove(r.id);
+
+      const recs = seed.map((row, idx) => ({
+        id: U.uuid(),
+        _seedKey: `${row.date || "x"}|${row.receiptNo || ""}|${row.description}|${row.amount}|${idx}`,
+        createdAt: (row.date || U.todayISO()) + "T08:00:00.000Z",
+        updatedAt: U.nowISO(),
+        title: App.settings.defaultTitle,
+        documentCode: "",
+        version: "",
+        effectiveDate: row.date || "",
+        department: App.settings.defaultDepartment,
+        requestDate: row.date || "",
+        requestedBy: App.settings.defaultRequester.name,
+        division: App.settings.defaultDivision,
+        receiptNo: row.receiptNo || "",
+        items: [{ description: row.description, amount: row.amount, virtualAccount: "", remarks: "" }],
+        requester: Object.assign({}, App.settings.defaultRequester),
+        approver: Object.assign({}, App.settings.defaultApprover),
+        notes: row.method ? "Metode: " + row.method : "",
+        transferProofs: [],
+      }));
       await DB.Receipts.bulkPut(recs);
-      toast(recs.length + " kwitansi historis diimpor ✓");
+      const msg = oldSeed.length
+        ? `Data historis diperbarui (${recs.length} kwitansi, tanggal dikoreksi) ✓`
+        : `${recs.length} kwitansi historis diimpor ✓`;
+      toast(msg);
       navigate();
     } catch (err) {
       toast("Gagal memuat data historis", "err");
