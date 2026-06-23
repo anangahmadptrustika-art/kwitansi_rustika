@@ -543,7 +543,7 @@
           <label>Nama Perusahaan <input class="inp" name="companyName" value="${esc(s.companyName)}"/></label>
           <label>Brand <input class="inp" name="brandName" value="${esc(s.brandName)}"/></label>
           <div class="logo-row">
-            <div class="logo-preview"><img id="logo-img" src="${esc(s.logo || "assets/logo.svg")}" alt="logo"/></div>
+            <div class="logo-preview"><img id="logo-img" src="${esc(s.logo || window.DEFAULT_LOGO || "assets/logo.svg")}" alt="logo"/></div>
             <div>
               <input type="file" id="logo-input" accept="image/*" class="file-input"/>
               <p class="muted small">Unggah logo asli (PNG/JPG/SVG). Kosongkan untuk pakai logo bawaan.</p>
@@ -609,7 +609,7 @@
       $("#logo-img").src = out;
       form.dataset.logo = out;
     });
-    $("#logo-reset").onclick = () => { $("#logo-img").src = "assets/logo.svg"; form.dataset.logo = ""; };
+    $("#logo-reset").onclick = () => { $("#logo-img").src = window.DEFAULT_LOGO || "assets/logo.svg"; form.dataset.logo = ""; };
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
@@ -739,7 +739,28 @@
   }
 
   /* ================================================================== INIT */
+  // Pakai assets/logo.png sebagai logo bawaan bila tersedia (cukup unggah file
+  // tersebut ke repo), jika tidak ada gunakan assets/logo.svg.
+  function resolveDefaultLogo() {
+    return new Promise((resolve) => {
+      let done = false;
+      const finish = (v) => { if (!done) { done = true; resolve(v); } };
+      const img = new Image();
+      img.onload = () => finish("assets/logo.png");
+      img.onerror = () => finish("assets/logo.svg");
+      img.src = "assets/logo.png?v=" + Date.now();
+      setTimeout(() => finish("assets/logo.svg"), 1500);
+    });
+  }
+
   async function init() {
+    window.DEFAULT_LOGO = await resolveDefaultLogo();
+    // terapkan ke favicon & logo sidebar
+    const fav = document.querySelector('link[rel="icon"]');
+    if (fav) fav.href = window.DEFAULT_LOGO;
+    const brand = document.querySelector(".brand-logo");
+    if (brand) brand.src = window.DEFAULT_LOGO;
+
     const saved = await DB.Settings.get("app");
     App.settings = CONFIG.withDefaults(saved);
     if (!saved) await DB.Settings.set("app", App.settings);

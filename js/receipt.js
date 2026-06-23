@@ -10,7 +10,7 @@
 
   function logoSrc(settings) {
     if (settings && settings.logo) return settings.logo;
-    return "assets/logo.svg";
+    return window.DEFAULT_LOGO || "assets/logo.svg";
   }
 
   function computeTotal(receipt) {

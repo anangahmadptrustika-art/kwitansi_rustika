@@ -59,14 +59,18 @@ Aktifkan GitHub Pages (branch ini, folder root). Aplikasi langsung online.
 
 ## 🖼️ Mengganti Logo
 
-Logo bawaan adalah reproduksi SVG dari logo Rustika. Untuk memakai logo asli:
+Ada dua cara, pilih salah satu:
 
+**Cara 1 — Lewat aplikasi (cepat, per-browser).** Cocok bila Anda pemakai utama.
 1. Buka menu **⚙️ Pengaturan**
-2. Pada bagian *Identitas & Logo*, klik **pilih file** dan unggah logo Anda
-   (PNG/JPG/SVG)
-3. Klik **Simpan Pengaturan**
+2. Bagian *Identitas & Logo* → klik **pilih file** dan unggah logo Anda (PNG/JPG/SVG)
+3. Klik **Simpan Pengaturan** → logo dipakai di semua kwitansi.
 
-Logo akan otomatis dipakai di semua kwitansi.
+**Cara 2 — Jadikan logo default situs (untuk semua pengunjung).**
+Unggah file logo asli Anda ke repo dengan nama **`assets/logo.png`**
+(di GitHub: *Add file → Upload files* ke folder `assets/`). Aplikasi otomatis
+mendeteksi dan memakainya sebagai logo bawaan di mana-mana — tanpa ubah kode.
+Bila `assets/logo.png` tidak ada, aplikasi memakai `assets/logo.svg`.
 
 ---
 
