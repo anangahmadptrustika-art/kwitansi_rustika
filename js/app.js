@@ -628,6 +628,7 @@
       if (form.dataset.logo !== undefined) ns.logo = form.dataset.logo || null;
       App.settings = ns;
       await DB.Settings.set("app", ns);
+      applyBranding(ns.logo || window.DEFAULT_LOGO || "assets/logo.svg");
       toast("Pengaturan disimpan ✓");
     });
 
@@ -753,17 +754,24 @@
     });
   }
 
+  // Terapkan logo ke favicon & sidebar
+  function applyBranding(src) {
+    const fav = document.querySelector('link[rel="icon"]');
+    if (fav) fav.href = src;
+    const brand = document.querySelector(".brand-logo");
+    if (brand) brand.src = src;
+  }
+
   async function init() {
     window.DEFAULT_LOGO = await resolveDefaultLogo();
-    // terapkan ke favicon & logo sidebar
-    const fav = document.querySelector('link[rel="icon"]');
-    if (fav) fav.href = window.DEFAULT_LOGO;
-    const brand = document.querySelector(".brand-logo");
-    if (brand) brand.src = window.DEFAULT_LOGO;
+    applyBranding(window.DEFAULT_LOGO);
 
     const saved = await DB.Settings.get("app");
     App.settings = CONFIG.withDefaults(saved);
     if (!saved) await DB.Settings.set("app", App.settings);
+
+    // logo unggahan (jika ada) dipakai di seluruh tampilan
+    if (App.settings.logo) applyBranding(App.settings.logo);
 
     window.addEventListener("hashchange", navigate);
     navigate();
