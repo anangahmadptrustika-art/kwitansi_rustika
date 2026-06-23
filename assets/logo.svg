@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 130" width="460" height="130" role="img" aria-label="Rustika Consultant">
+  <defs>
+    <radialGradient id="rcGold" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFD64D"/>
+      <stop offset="55%" stop-color="#F2B816"/>
+      <stop offset="100%" stop-color="#C8910A"/>
+    </radialGradient>
+    <radialGradient id="rcDark" cx="38%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#3a3a3a"/>
+      <stop offset="70%" stop-color="#1d1d1d"/>
+      <stop offset="100%" stop-color="#0c0c0c"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Emblem -->
+  <g transform="translate(8,8)">
+    <circle cx="57" cy="57" r="57" fill="url(#rcDark)"/>
+    <circle cx="57" cy="57" r="57" fill="none" stroke="#000" stroke-opacity="0.35" stroke-width="2"/>
+    <!-- vertical golden bars (left side) -->
+    <g fill="url(#rcGold)">
+      <rect x="20" y="30" width="7" height="54" rx="2"/>
+      <rect x="31" y="26" width="7" height="62" rx="2"/>
+      <rect x="42" y="22" width="7" height="70" rx="2"/>
+    </g>
+    <!-- stylised R -->
+    <path fill="url(#rcGold)"
+      d="M55 22 h22 a20 20 0 0 1 0 40 h-7 l16 30 h-15 l-15 -28 v28 h-12 V22 h26 z
+         M55 34 v18 h20 a9 9 0 0 0 0 -18 h-20 z"/>
+    <!-- small wing / swoosh bottom-right -->
+    <path fill="url(#rcGold)" d="M70 92 h22 l-8 8 h-22 z"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(140,0)" font-family="Arial, Helvetica, sans-serif">
+    <text x="0" y="55" font-size="42" font-weight="800" letter-spacing="1" fill="#111">RUSTIKA</text>
+    <text x="2" y="88" font-size="30" font-weight="600" letter-spacing="6" fill="#333">CONSULTANT</text>
+    <text x="3" y="108" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#8a8a8a">PT RUSTIKA GLOBAL INDONESIA</text>
+  </g>
+</svg>

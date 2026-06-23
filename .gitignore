@@ -1,0 +1,14 @@
+# Dependencies (tidak dipakai saat runtime, hanya untuk pengembangan)
+node_modules/
+package-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Logs / temp
+*.log
+.cache/

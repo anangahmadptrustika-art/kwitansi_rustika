@@ -1,0 +1,52 @@
+/* =========================================================================
+ * print.css — Aturan cetak / ekspor PDF (A4)
+ * Hanya dokumen kwitansi yang tercetak; UI aplikasi disembunyikan.
+ * ========================================================================= */
+@page {
+  size: A4;
+  margin: 12mm 12mm;
+}
+
+@media print {
+  html, body { background: #fff !important; margin: 0 !important; padding: 0 !important; }
+
+  /* sembunyikan elemen UI */
+  .no-print, .sidebar, .topbar, .page-head, .preview-pane,
+  .toast-host, #modal-host, .form, .list-toolbar, .nav { display: none !important; }
+
+  .app { display: block !important; }
+  .main { display: block !important; }
+  .view { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+  .doc-frame { display: block !important; padding: 0 !important; }
+
+  /* dokumen kwitansi -> penuh halaman */
+  .kwitansi-doc {
+    width: 100% !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+    font-size: 12pt;
+  }
+
+  /* hindari potong di tengah elemen penting */
+  .kw-table, .kw-signs { page-break-inside: avoid; }
+  .kw-proof-grid figure { page-break-inside: avoid; }
+  .kw-proofs { page-break-before: auto; }
+  thead { display: table-header-group; }
+  tr { page-break-inside: avoid; }
+
+  /* mode cetak ad-hoc (dari tombol pratinjau) */
+  body.printing-adhoc .app { display: none !important; }
+  body.printing-adhoc #adhoc-print { display: block !important; }
+  #adhoc-print { display: none; }
+  #adhoc-print .kwitansi-doc {
+    width: 100% !important; box-shadow: none !important; border-radius: 0 !important;
+    padding: 0 !important; margin: 0 !important; transform: none !important;
+  }
+}
+
+/* tampil hanya saat dipakai print ad-hoc */
+.print-only { display: none; }
