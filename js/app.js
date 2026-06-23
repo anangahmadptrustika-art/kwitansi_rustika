@@ -244,8 +244,8 @@
 
     return `<svg viewBox="0 0 ${W} ${H}" class="trend" preserveAspectRatio="xMidYMid meet" role="img">
       <defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#F2B816" stop-opacity="0.32"/>
-        <stop offset="100%" stop-color="#F2B816" stop-opacity="0.02"/>
+        <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.30"/>
+        <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.02"/>
       </linearGradient></defs>
       ${grid}
       <line class="axis" x1="${padL}" y1="${padT + ih}" x2="${W - padR}" y2="${padT + ih}"/>
