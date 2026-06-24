@@ -1,0 +1,7 @@
+{
+  "name": "kwitansi-rustika",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Aplikasi kwitansi otomatis PT Rustika Global Indonesia (situs statis + endpoint status serverless di /api)"
+}
